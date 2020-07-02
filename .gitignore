@@ -1,0 +1,4 @@
+.DS_Store
+webdriverio-test/node_modules
+test/node_modules
+
