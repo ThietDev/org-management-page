@@ -253,8 +253,7 @@ describe('Verifying on org management page', async () => {
     
             const orgDescriptionMessage = await $(elements.orgDescriptionMessage)
             await expect(orgDescriptionMessage).toBeVisible()
-            await browser.pause(3000)
-            
+            await browser.pause(3000)          
         })
     
         it('should verify that be able to update Edit Organization with valid Organization Name and Organization Description', async () => {
@@ -315,8 +314,7 @@ describe('Verifying on org management page', async () => {
             await expect(userTitle).toBeVisible()
             const emailTitle = await $(elements.emailTitle)
             await expect(emailTitle).toBeVisible()
-            await browser.pause(3000)
-    
+            await browser.pause(3000)   
         })
     
         it('should assign members successfully when clicking to update', async () => {
@@ -552,8 +550,7 @@ describe('Verifying on org management page', async () => {
     
             const updateDeviceSuccessfulMessage = await $(elements.updateDeviceSuccessfulMessage)
             await expect(updateDeviceSuccessfulMessage).toBeVisible()
-            await browser.pause(3000)
-    
+            await browser.pause(3000)   
         })
     
         it('should verify display the remove confirmation popup', async () => {
