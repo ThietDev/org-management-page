@@ -91,7 +91,7 @@ describe('Verifying on org management page', async () => {
         expect(browser).toHaveTitle('Kobiton');
     })
 
-    it.only('should login in portal-test successfully', async () => {
+    it('should login in portal-test successfully', async () => {
         const emailTextBox = await $(elements.emailTextBox)
         await emailTextBox.click()
         await emailTextBox.keys('khanhdo')
@@ -99,7 +99,7 @@ describe('Verifying on org management page', async () => {
 
         const passwordTextBox = await $(elements.passwordTextBox)
         await passwordTextBox.click()
-        await passwordTextBox.keys('Kobiton@2020')
+        await passwordTextBox.keys('')
         await browser.pause(3000)
         await browser.keys("\uE007");
         await browser.pause(8000) 
